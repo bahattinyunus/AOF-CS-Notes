@@ -1,0 +1,22 @@
+# General
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Files
+*.log
+*.tmp
+*.bak
+
+# Build/Dependency Directories (if any specific languages are added later)
+node_modules/
+__pycache__/
+*.class
+bin/
+obj/
