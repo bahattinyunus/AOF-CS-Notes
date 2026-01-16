@@ -58,8 +58,52 @@ h1 {
     background-color: #f0f0f0; /* Arka plan gri */
     margin: 10px; /* Dış boşluk */
     padding: 20px; /* İç boşluk */
+    border-radius: 8px; /* Kenar yuvarlama */
 }
 ```
+
+## 🏗️ 4. Modern Düzenler (Flexbox & Grid)
+Eski yöntemlerin (float) yerine modern hizalama araçlarını kullanın.
+
+### Flexbox (Tek Boyutlu)
+```css
+.container {
+    display: flex;
+    justify-content: space-between; /* Yatay hiza */
+    align-items: center; /* Dikey hiza */
+}
+```
+
+### Grid (İki Boyutlu)
+```css
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */
+    gap: 15px; /* Hücreler arası boşluk */
+}
+```
+
+## 📱 5. Responsive Tasarım (Mobil Uyumluluk)
+Ekran boyutuna göre değişen tasarımlar yapın.
+
+```css
+/* Masaüstü için standart stiller buraya... */
+
+/* Tablet ve Mobil için (992px altı) */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Sütunları alt alta diz */
+    }
+}
+```
+
+## 🛠️ 6. Tekniker İpucu: Tarayıcı Geliştirici Araçları
+Bir web sayfası bozuk görünüyorsa, kodda kaybolmak yerine **F12** tuşuna basın.
+
+1.  **Inspect (İncele):** Sayfadaki bir öğeye sağ tıklayıp "İncele" deyin.
+2.  **Styles Tab:** CSS kurallarını anlık olarak değiştirip sonucu görün.
+3.  **Console:** Hataları ve çıktıları takip edin.
+4.  **Network:** Sayfanın neden yavaş yüklendiğini analiz edin.
 
 > **💡 Sınav İpucu:**
 > HTML yapıyı kurar, CSS şekil verir, JavaScript ise hareket/işlev katar. İnsan vücuduna benzetirsek; HTML kemikler, CSS deri ve kıyafet, JS ise kas sistemidir.

@@ -81,6 +81,72 @@ mesaj = selamla("Ahmet")
 print(mesaj) # Çıktı: Merhaba, Ahmet!
 ```
 
+## 5. Hata Yönetimi (Error Handling)
+Bir teknikerin en önemli görevi sistemin çökmesini engellemektir.
+
+```python
+try:
+    sayi = int(input("Bir sayı girin: "))
+    sonuc = 100 / sayi
+    print(f"Sonuç: {sonuc}")
+except ValueError:
+    print("Hata: Lütfen geçerli bir tam sayı girin!")
+except ZeroDivisionError:
+    print("Hata: Bir sayı sıfıra bölünemez!")
+except Exception as e:
+    print(f"Beklenmedik bir hata oluştu: {e}")
+finally:
+    print("İşlem tamamlandı (Hata olsa da olmasa da çalışır).")
+```
+
+## 6. Liste Metotları ve List Comprehension
+Verileri hızlıca işlemek için kullanılır.
+
+```python
+programlar = ["Python", "C#", "SQL", "Java"]
+
+# Yeni bir liste oluşturma (Klasik yöntem)
+buyuk_harfli = []
+for p in programlar:
+    buyuk_harfli.append(p.upper())
+
+# List Comprehension (Profesyonel yöntem)
+buyuk_harfli_pro = [p.upper() for p in programlar]
+print(buyuk_harfli_pro)
+```
+
+## 7. Dosya İşlemleri (File I/O)
+Log dosyalarını okumak veya rapor oluşturmak için kritiktir.
+
+```python
+# Dosyaya yazma
+with open("log.txt", "w", encoding="utf-8") as dosya:
+    dosya.write("Sistem başlatıldı...\n")
+    dosya.write("Hata: Veritabanı bağlantısı koptu.")
+
+# Dosyadan okuma
+with open("log.txt", "r", encoding="utf-8") as dosya:
+    icerik = dosya.read()
+    print(icerik)
+```
+
+## 🛠️ Tekniker Otomasyon Örneği: Log Analizi
+Bir tekniker olarak binlerce satırlık log dosyası içinde "Hata" kelimesini aramanız gerekebilir.
+
+```python
+def hata_ara(dosya_yolu):
+    try:
+        with open(dosya_yolu, "r") as f:
+            hatalar = [satir.strip() for satir in f if "HATA" in satir.upper()]
+            return hatal
+    except FileNotFoundError:
+        return "Dosya bulunamadı!"
+
+# Kullanım
+bulunan_hatalar = hata_ara("sunucu_log.txt")
+print(f"Toplam {len(bulunan_hatalar)} hata bulundu.")
+```
+
 ## 📝 Algoritma Mantığı
 Programlamanın temeli algoritmadır. Bir problemin çözüm yoludur.
 
