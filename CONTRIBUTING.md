@@ -1,25 +1,32 @@
-# Katkı Sağlama Rehberi
+# Katkı Sağlama Rehberi (CONTRIBUTING)
 
-Bu projeye katkıda bulunmak istediğiniz için teşekkür ederiz! AÖF öğrencilerinin başarısına ortak olmak harika bir duygu. Katkılarınızı sorunsuz bir şekilde entegre edebilmemiz için lütfen aşağıdaki yönergeleri takip edin.
+Öncelikle, **AOF-CS-Notes** projesine katkıda bulunmayı düşündüğünüz için teşekkür ederiz! 🎉
 
-## Nasıl Katkıda Bulunabilirim?
+Bu depo, sadece bir ders notu arşivi değil, aynı zamanda **Anadolu Üniversitesi Bilgisayar Programcılığı** öğrencilerinin "gerçek dünya" (Open Source) proje kültürüyle tanışması için bir **Tatbikat Alanıdır**.
 
-### 1. Hata Bildirimi ve Öneriler
-Eğer notlarda bir hata fark ederseniz veya yeni bir özellik/ders notu öneriniz varsa, lütfen [Issues](https://github.com/bahattinyunus/AOF-CS-Notes/issues) sekmesinden yeni bir başlık açın.
+## 🛠️ Nasıl Katkı Sağlayabilirim?
 
-### 2. Yeni Not Ekleme veya Düzenleme
-1.  **Fork**: Bu depoyu (repository) kendi hesabınıza fork'layın.
-2.  **Branch**: Yaptığınız değişiklik için açıklayıcı bir branch oluşturun (örneğin: `git checkout -b veritabani-notlari-ekle`).
-3.  **Değişiklikler**: Notlarınızı Markdown formatında ekleyin veya düzenleyin.
-4.  **Commit**: Anlaşılır commit mesajları yazın (örneğin: `Veritabanı 1. ünite özeti eklendi`).
-5.  **Push**: Branch'inizi kendi deponuza gönderin (`git push origin veritabani-notlari-ekle`).
-6.  **Pull Request (PR)**: Orijinal depoya bir Pull Request gönderin.
+Katkı sağlamak için profesör olmanıza gerek yok. Aşağıdaki her türlü katkı bizim için altındır:
 
-## Dosya İsimlendirme ve Yapı
-*   Dosya isimlerinde Türkçe karakter ve boşluk kullanmamaya özen gösterin (örneğin: `Veritabani_Yonetim_Sistemleri.md`).
-*   Notları ilgili ders klasörünün altına ekleyin. Eğer klasör yoksa oluşturabilirsiniz.
+1.  **Hata Düzeltme (Fix):** Gördüğünüz yazım hatalarını, kırık linkleri veya yanlış kod örneklerini düzeltin.
+2.  **İçerik Ekleme (Feat):** Eksik olduğunu düşündüğünüz konuları (örneğin; "Python'da Listeler", "SQL Join Mantığı") kendi cümlelerinizle "Metal Yaka" formatında (pratik ve anlaşılır) yazıp ekleyin.
+3.  **Proje Örnekleri:** Kendi yaptığınız basit projeleri `05_Uygulama_ve_Projeler` altına ekleyin.
+4.  **Soru/Cevap:** GitHub "Issues" kısmında açılan sorulara yanıt verin.
 
-## Markdown Formatı
-Notlarınızın okunabilir olması için lütfen standart Markdown sözdizimini kullanın. Başlıklar, listeler ve kod blokları kullanarak içeriği zenginleştirin.
+## 📋 Kurallar (The Manifest)
 
-Teşekkürler! 🎉
+Bu repoya kod veya yazı gönderirken şu felsefeye sadık kalmaya çalışın:
+
+*   **Basit ve Öz:** Akademik jargon yerine "Saha Dili"ni kullanın. Bir konuyu anlatırken "Bu bilgi şantiyede/ofiste işime nasıl yarar?" sorusunu cevaplayın.
+*   **Temiz Kod:** Paylaştığınız kod örnekleri çalışır durumda, okunaklı ve yorum satırları eklenmiş olsun.
+*   **Saygı:** Burası bir öğrenme alanıdır. Acemi sorularına sabırla yaklaşın. "RTFM" (Read The Manual) demek yerine link verin, yol gösterin.
+
+## 🚀 Pull Request (PR) Süreci
+
+1.  Bu repoyu kendi hesabınıza **Fork** edin.
+2.  Kendi bilgisayarınıza indirin (`git clone`).
+3.  Yeni bir dal (branch) açın (`git checkout -b yeni-ozellik`).
+4.  Değişikliklerinizi yapın ve işleyin (`git commit -m "Python döngüler eklendi"`).
+5.  GitHub üzerinden **Pull Request** gönderin.
+
+Yaptığınız katkılar incelenecek ve uygun görülürse ana projeye dahil edilecektir. Şimdiden elinize sağlık! ⌨️🖱️
